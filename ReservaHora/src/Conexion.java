@@ -1,0 +1,20 @@
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+
+public class Conexion {
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.jbdc.Driver");
+			
+			DriverManager.getConnection("jdbc:mysql://localhost:3306/clinica", "root", "doremi87");
+			System.out.println("Conexion ok");
+		} catch (ClassNotFoundException e) {
+			System.out.println("Error al cargar el controlador");
+			e.printStackTrace();
+		} catch (SQLException e) {
+			System.out.println("Error en la Conexion");
+			e.printStackTrace();
+		}
+	}
+}

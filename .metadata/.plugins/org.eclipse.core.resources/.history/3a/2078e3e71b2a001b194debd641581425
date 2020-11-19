@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.masthead d-flex{
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background: url('mascota.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
