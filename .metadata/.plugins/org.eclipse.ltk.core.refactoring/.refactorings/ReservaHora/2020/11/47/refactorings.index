@@ -5,3 +5,20 @@
 1605758722861	Rename resource 'style.css'
 1605762163474	Delete element
 1605762310600	Delete element
+1605802511021	Copy compilation units
+1605802528500	Delete element
+1605802655826	Rename package 'LoginServlet.java'
+1605802673631	Rename type 'LoginServlt'
+1605804365343	Rename type 'Conexion'
+1605804453156	Copy compilation unit
+1605804471373	Rename package 'conexion'
+1605824872054	Move package
+1605824876956	Move package
+1605824879359	Move package
+1605824899607	Delete element
+1605825064158	Delete element
+1605836507881	Move 'LoginTest.java' to 'test'
+1605836591049	Delete element
+1605836595892	Copy compilation unit
+1605836599810	Delete element
+1605836782446	Delete element

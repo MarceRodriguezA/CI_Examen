@@ -1,4 +1,4 @@
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,31 +16,6 @@
 	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 	    	<span class="navbar-toggler-icon"></span>
 	    </button>
-	    <div class="collapse navbar-collapse" id="navbarNav">
-		    <ul class="navbar-nav ml-auto">
-			    <li class="nav-item active">
-			    	<li class="nav-item">
-			    		<a class="nav-link" href="index.jsp">Login</a>
-					</li>
-					<li class="nav-item">
-			    		<a class="nav-link" href="Inicio.jsp">inicio</a>
-					</li>
-					<li class="nav-item">
-			    		<a class="nav-link" href="IngresoDatos.jsp">Ingreso Datos</a>
-					</li>
-					<li class="nav-item">
-			    		<a class="nav-link" href="IngresoMascota.jsp">Ingreso Mascota</a>
-					</li>
-			    	<li class="nav-item">
-			    		<a class="nav-link"  href="AgendarHora.jsp">Agendar Hora</a>
-					</li>
-			     </li>
-					<li class="nav-item">
-				    	<a class="nav-link" href="index.jsp">Cerrar sesión</a>
-				    	
-					</li>
-			</ul>
-	   	</div>  
 	  	</div>
 	</nav>
 	
@@ -49,21 +24,27 @@
         <div class="col-md-6 mx-auto">
             <div class="card text-center">
                 <div class="card-header">
-                    <h3> Inicio Sesión </h3>
+                    <h3> Inicio SesiÃ³n </h3>
                 </div>
                 <div class="card-body">
-                    <form action="" method="POST">
+                    <form name="formLogin" action="LoginServlet" method="post">
                         <div class="form-group">
                             <input type="text" name="username" placeholder="Usuario" class="form.control">
                         </div>
                         <div class="form-group">
-                            <input type="password" name="password" placeholder="Contraseña" class="form.control">
+                            <input type="password" name="password" placeholder="ContraseÃ±a" class="form.control">
                         </div>
                         <div class="form-group">
-                            <button class="btn btn-success btn-block"> Iniciar Sesion</button>
-                            <a href="RegistroUsuario.jsp" class="btn btn-success btn-block"> Registrarse</a>
+                            <input value="Iniciar Sesion" type="submit" />
+      						<input type="reset" />
                         </div>
                     </form>
+                    <%
+						String errorMessage = (String) session.getAttribute("errorMessage");
+						if (null !=errorMessage) { %>
+						<h4> <%=errorMessage %></h4>
+						<%}
+					%>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,7 +36,7 @@
 					</li>
 			     </li>
 					<li class="nav-item">
-				    	<a class="nav-link" href="index.jsp">Cerrar sesión</a>
+				    	<a class="nav-link" href="index.jsp">Cerrar sesiÃ³n</a>
 				    	
 					</li>
 			</ul>
